@@ -1,7 +1,8 @@
 % -------[ DEFINIZIONI DI STILE PERSONALI ]-----------------------------------------
 % -------[ Edoardo Porcaro ]--------------------------------------------------------
-% -------[ 11 agosto 2025 ]---------------------------------------------------------
-% -------[ v 1.2 ]------------------------------------------------------------------
+% -------[ Iniziato il 11 agosto 2025 ]---------------------------------------------
+% -------[ Ultimo aggiornamento il 17 settembre 2025 ]------------------------------
+% -------[ v 1.3 ]------------------------------------------------------------------
 
 % -------[ COME USARE IL PACCHETTO ]------------------------------------------------
 %   1. Subito sotto a \documentclass{***}, incollare la seguente riga
@@ -221,33 +222,6 @@
     %   Pagina
         \crefformat{page}{\sffamily#2pag.~#1#3}
         \Crefformat{page}{\sffamily#2Pag.~#1#3}
-    
-    %   Range di equazioni (eqq. e Eqq.) (tolgo anche le parentesti altrimenti presenti)
-        \crefrangeformat{equation}{\sffamily eqq. da #1 a #2}
-        \Crefrangeformat{equation}{\sffamily Eqq. da #1 a #2}
-    %   Range di figure (figg. e Figg.)
-        \crefrangeformat{figure}{\sffamily figg. da #1 a #2}
-        \Crefrangeformat{figure}{\sffamily Figg. da #1 a #2}
-    %   Range di tabelle (tabb. e Tabb.)
-    % TABLE
-    \crefrangeformat{table}{\sffamily tabb. da #1 a #2}
-    \Crefrangeformat{table}{\sffamily Tabb. da #1 a #2}
-    
-    % SECTION
-    \crefrangeformat{section}{\sffamily capp. da #1 a #2}
-    \Crefrangeformat{section}{\sffamily Capp. da #1 a #2}
-    
-    % SUBSECTION
-    \crefrangeformat{subsection}{\sffamily sezz. da #1 a #2}
-    \Crefrangeformat{subsection}{\sffamily Sezz. da #1 a #2}
-    
-    % SUBSUBSECTION
-    \crefrangeformat{subsubsection}{\sffamily parr. da #1 a #2}
-    \Crefrangeformat{subsubsection}{\sffamily Parr. da #1 a #2}
-    
-    % PAGE
-    \crefrangeformat{page}{pagg. da #1 a #2}
-    \Crefrangeformat{page}{Pagg. da #1 a #2}
     % Per riferirsi sia all'oggetto sia alla pagina in cui è presente
         \newcommand{\crefpage}[1]{\cref{#1} \textsf{a} \cpageref{#1}}
 % -------[ fine ]-------------------------------------------------------------------
